@@ -1,0 +1,1 @@
+export {ButtonRegMain} from "./ButtonRegMain.tsx";

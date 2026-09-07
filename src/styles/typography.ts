@@ -1,33 +1,50 @@
-import { css } from "styled-components";
+import {css} from "styled-components";
 import {
-  montserratAlternatesBold,
-  montserratAlternatesRegular,
-  montserratFamily300,
-  montserratFamily600,
+    montserratAlternatesBold,
+    montserratFamily200,
+    montserratFamily300,
+    montserratFamily400, montserratFamily600,
+    tagesschriftCyrillicRegular
 } from "./fonts";
 
 export const Typography = {
-  h1: css`
-    ${montserratAlternatesBold};
+    mainTitle: css`
+        ${montserratAlternatesBold};
+        font-size: 50px;
+    `,
 
-    font-size: 50px;
-  `,
+    subtitle: css`
+        ${montserratFamily300};
+        font-size: 15px;
+    `,
 
-  h2: css`
-    ${montserratAlternatesRegular};
+    button: css`
+        ${montserratFamily600};
+        font-size: 24px;
+    `,
 
-    font-size: 40px;
+    title: css`
+        ${tagesschriftCyrillicRegular};
+        font-size: 40px;
+    `,
 
-    color: ${({ theme }) => theme.colors.kournikova};
-  `,
+    caption: css`
+        ${montserratFamily300};
+        font-size: 15px;
+    `,
 
-  p1: css`
-    ${montserratFamily600};
-    font-size: 24px;
-  `,
+    placeholder: css`
+        ${montserratFamily200};
+        font-size: 14px;
+    `,
 
-  caption: css`
-    ${montserratFamily300};
-    font-size: 15px;
-  `,
+    input: css`
+        ${montserratFamily400};
+        font-size: 14px;
+    `,
+
+    twitchName: css`
+        ${tagesschriftCyrillicRegular};
+        font-size: 36px;
+    `,
 };

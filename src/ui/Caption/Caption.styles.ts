@@ -1,21 +1,23 @@
 import styled from "styled-components";
-import { Typography } from "../../styles/typography";
+import {Typography} from "../../styles/typography";
 
 export const Caption = styled.p`
-  margin-top: auto;
-  position: relative;
+    position: relative;
+    margin-top: auto;
+    padding-bottom: 15px;
 
-  ${Typography.caption};
-
-  text-transform: uppercase;
-  padding-bottom: 15px;
+    ${Typography.caption};
+    color: ${({theme}) => theme.text.colors.caption};
+    text-transform: uppercase;
 `;
 
 export const CaptionArrow = styled.span`
-  display: block;
-  position: absolute;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 
-  bottom: 0;
-  left: calc(50% - 4px);
-
+    display: block;
+    line-height: 1;
+    color: ${({theme}) => theme.text.colors.caption};
 `;

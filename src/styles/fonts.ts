@@ -1,5 +1,11 @@
 import { css } from "styled-components";
 
+export const tagesschriftCyrillicRegular = css`
+    font-family: "Tagesschrift Cyrillic",serif;
+    font-weight: 600;
+    font-style: normal;
+`;
+
 export const montserratFamily100 = css`
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
